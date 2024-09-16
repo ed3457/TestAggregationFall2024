@@ -2,10 +2,17 @@
 //
 
 #include <iostream>
-
+#include "Employee.h"
 int main()
 {
-    std::cout << "Hello World!\n";
+	Address eAddress("Ford", "3325", "Taylor");
+
+	Employee e1;
+
+	e1.setAddress(eAddress);
+
+	cout << e1.getAddress().getNumber() << endl;
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
